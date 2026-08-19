@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#111118"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="50%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Browser mockup -->
+  <rect x="100" y="60" width="600" height="380" rx="12" fill="#111118" stroke="#1e1e2a" stroke-width="1"/>
+  <rect x="100" y="60" width="600" height="35" rx="12" fill="#1a1a24"/>
+  <rect x="100" y="83" width="600" height="12" fill="#1a1a24"/>
+  <circle cx="120" cy="77" r="4" fill="#ef4444"/>
+  <circle cx="136" cy="77" r="4" fill="#eab308"/>
+  <circle cx="152" cy="77" r="4" fill="#22c55e"/>
+  <rect x="200" y="70" width="200" height="14" rx="7" fill="#252530"/>
+  <!-- Hero section mockup -->
+  <rect x="120" y="110" width="560" height="120" rx="6" fill="#0f1419"/>
+  <text x="400" y="160" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="20" font-weight="bold" fill="white">Himel Shikdar</text>
+  <text x="400" y="185" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="11" fill="#06b6d4">Full Stack Developer</text>
+  <rect x="330" y="200" width="60" height="20" rx="10" fill="url(#accent)" opacity="0.8"/>
+  <!-- Nav dots -->
+  <circle cx="160" cy="140" r="3" fill="#10b981" opacity="0.5"/>
+  <circle cx="175" cy="140" r="3" fill="#64748b" opacity="0.3"/>
+  <circle cx="190" cy="140" r="3" fill="#64748b" opacity="0.3"/>
+  <!-- Content cards -->
+  <rect x="130" y="250" width="170" height="80" rx="8" fill="#1a1a24" stroke="#1e1e2a" stroke-width="0.5"/>
+  <rect x="145" y="265" width="40" height="40" rx="8" fill="#10b981" opacity="0.15"/>
+  <rect x="145" y="265" width="40" height="40" rx="8" fill="none" stroke="#10b981" stroke-width="0.5" opacity="0.3"/>
+  <rect x="200" y="270" width="80" height="6" rx="3" fill="#334155"/>
+  <rect x="200" y="282" width="60" height="4" rx="2" fill="#1e293b"/>
+
+  <rect x="315" y="250" width="170" height="80" rx="8" fill="#1a1a24" stroke="#1e1e2a" stroke-width="0.5"/>
+  <rect x="330" y="265" width="40" height="40" rx="8" fill="#06b6d4" opacity="0.15"/>
+  <rect x="330" y="265" width="40" height="40" rx="8" fill="none" stroke="#06b6d4" stroke-width="0.5" opacity="0.3"/>
+  <rect x="385" y="270" width="80" height="6" rx="3" fill="#334155"/>
+  <rect x="385" y="282" width="60" height="4" rx="2" fill="#1e293b"/>
+
+  <rect x="500" y="250" width="170" height="80" rx="8" fill="#1a1a24" stroke="#1e1e2a" stroke-width="0.5"/>
+  <rect x="515" y="265" width="40" height="40" rx="8" fill="#3b82f6" opacity="0.15"/>
+  <rect x="515" y="265" width="40" height="40" rx="8" fill="none" stroke="#3b82f6" stroke-width="0.5" opacity="0.3"/>
+  <rect x="570" y="270" width="80" height="6" rx="3" fill="#334155"/>
+  <rect x="570" y="282" width="60" height="4" rx="2" fill="#1e293b"/>
+  <!-- Footer -->
+  <rect x="130" y="360" width="540" height="30" rx="4" fill="#1a1a24"/>
+  <text x="400" y="379" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="9" fill="#475569">Portfolio</text>
+  <!-- Tech badges -->
+  <text x="400" y="430" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="14" fill="#64748b" letter-spacing="3">PERSONAL PORTFOLIO</text>
+  <rect x="350" y="445" width="100" height="2" rx="1" fill="url(#accent)"/>
+</svg>
