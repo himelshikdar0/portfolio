@@ -65,7 +65,7 @@ export default function Hero() {
             <ScrollReveal delay={0.4}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <motion.a
-                  href="/cv.pdf"
+                  href={`${import.meta.env.BASE_URL}cv.pdf`}
                   download
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -117,7 +117,7 @@ export default function Hero() {
                   {/* Photo Frame */}
                   <div className="w-full h-full rounded-3xl border-2 border-primary/30 overflow-hidden bg-dark-card shadow-2xl shadow-primary/10 relative group">
                     <img
-                      src="/images/profile1.png"
+                      src={`${import.meta.env.BASE_URL}images/profile1.png`}
                       alt="Himel Shikdar"
                       className="w-full h-full object-cover object-[center_12%] transition-transform duration-700 group-hover:scale-105"
                     />
@@ -139,7 +139,7 @@ export default function Hero() {
               >
                 <div className="w-12 h-12 rounded-xl overflow-hidden border border-cyan/40 flex-shrink-0">
                   <img
-                    src="/images/profile2.png"
+                    src={`${import.meta.env.BASE_URL}images/profile2.png`}
                     alt="Himel Shikdar"
                     className="w-full h-full object-cover object-[62%_15%]"
                   />

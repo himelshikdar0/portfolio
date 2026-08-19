@@ -117,7 +117,7 @@ export const projects = [
     description:
       "A comprehensive Fish Farm Management System built for modern aquaculture operations. Features pond management, fish stock tracking, feeding management, growth tracking, water quality monitoring, income & expense tracking, sales management, and a powerful dashboard.",
     tech: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
-    image: "/images/project-aquafarm.svg",
+    image: `${import.meta.env.BASE_URL}images/project-aquafarm.svg`,
     liveDemo: "#",
     github: "#",
     category: "Full Stack",
@@ -138,7 +138,7 @@ export const projects = [
     description:
       "A modern, responsive portfolio website showcasing my work, skills, and professional experience. Built with a focus on premium UI/UX design and smooth animations.",
     tech: ["React", "Vite", "Tailwind CSS"],
-    image: "/images/project-portfolio.svg",
+    image: `${import.meta.env.BASE_URL}images/project-portfolio.svg`,
     liveDemo: "#",
     github: "#",
     category: "Frontend",
@@ -149,7 +149,7 @@ export const projects = [
     description:
       "A personal web application serving as a digital hub for my professional presence and creative projects.",
     tech: ["React", "Firebase", "Tailwind CSS"],
-    image: "/images/project-website.svg",
+    image: `${import.meta.env.BASE_URL}images/project-website.svg`,
     liveDemo: "#",
     github: "#",
     category: "Full Stack",
@@ -160,7 +160,7 @@ export const projects = [
     description:
       "A powerful Desktop AI Assistant featuring voice interaction, automation capabilities, AI-powered chat, and local AI processing for privacy-focused assistance.",
     tech: ["Python", "AI/ML", "Desktop App"],
-    image: "/images/project-leo.svg",
+    image: `${import.meta.env.BASE_URL}images/project-leo.svg`,
     liveDemo: "#",
     github: "#",
     category: "AI/ML",
@@ -171,7 +171,7 @@ export const projects = [
     description:
       "An innovative Islamic web application combining modern technology with spiritual guidance, providing an enriching digital experience.",
     tech: ["React", "AI Integration", "Web App"],
-    image: "/images/project-modina.svg",
+    image: `${import.meta.env.BASE_URL}images/project-modina.svg`,
     liveDemo: "#",
     github: "#",
     category: "Full Stack",
