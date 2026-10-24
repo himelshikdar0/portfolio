@@ -1,0 +1,26 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg width=800 height=500 viewBox=0 0 800 500>
+  <defs>
+    <linearGradient id=bg x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#0a101d/>
+      <stop offset=100% style=stop-color:#0d1b2a/>
+    </linearGradient>
+    <linearGradient id=pulse x1=0% y1=0% x2=100% y2=0%>
+      <stop offset=0% style=stop-color:#06b6d4/>
+      <stop offset=50% style=stop-color:#10b981/>
+      <stop offset=100% style=stop-color:#3b82f6/>
+    </linearGradient>
+  </defs>
+  <rect width=800 height=500 fill=url(#bg)/>
+  <!-- Cross Background -->
+  <g opacity=0.06 fill=#06b6d4>
+    <rect x=360 y=100 width=80 height=240 rx=10/>
+    <rect x=280 y=180 width=240 height=80 rx=10/>
+  </g>
+  <!-- ECG Heartbeat line -->
+  <path d=M120,240 L280,240 L310,170 L340,290 L370,140 L410,310 L440,210 L470,260 L500,240 L680,240 stroke=url(#pulse) stroke-width=5 fill=none stroke-linecap=round stroke-linejoin=round/>
+  <!-- Stethoscope / Health Badge -->
+  <circle cx=400 cy=120 r=30 fill=none stroke=#10b981 stroke-width=3 opacity=0.8/>
+  <path d=M390,120 L410,120 M400,110 L400,130 stroke=#10b981 stroke-width=4 stroke-linecap=round/>
+  <text x=400 y=400 font-family=system-ui, sans-serif font-size=28 font-weight=bold fill=#ffffff text-anchor=middle letter-spacing=2>DR. NAHID</text>
+  <text x=400 y=435 font-family=system-ui, sans-serif font-size=14 fill=#10b981 text-anchor=middle letter-spacing=3>MEDICAL PRACTICE &amp; CONSULTANT</text>
+</svg>

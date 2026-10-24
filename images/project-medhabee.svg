@@ -1,0 +1,20 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg width=800 height=500 viewBox=0 0 800 500>
+  <defs>
+    <linearGradient id=bg x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#071217/>
+      <stop offset=100% style=stop-color:#0d232e/>
+    </linearGradient>
+    <linearGradient id=learn x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#06b6d4/>
+      <stop offset=100% style=stop-color:#10b981/>
+    </linearGradient>
+  </defs>
+  <rect width=800 height=500 fill=url(#bg)/>
+  <!-- Open Book -->
+  <path d=M400,230 C350,210 270,220 270,220 L270,140 C270,140 350,130 400,150 C450,130 530,140 530,140 L530,220 C530,220 450,210 400,230 Z fill=none stroke=url(#learn) stroke-width=4/>
+  <!-- Graduation Cap -->
+  <polygon points=400,90 460,115 400,140 340,115 fill=url(#learn)/>
+  <polygon points=370,128 370,145 400,155 430,145 430,128 400,140 fill=url(#learn) opacity=0.8/>
+  <text x=400 y=380 font-family=system-ui, sans-serif font-size=28 font-weight=bold fill=#ffffff text-anchor=middle letter-spacing=2>MEDHABEE SMART STUDY</text>
+  <text x=400 y=415 font-family=system-ui, sans-serif font-size=14 fill=#06b6d4 text-anchor=middle letter-spacing=3>INTERACTIVE DIGITAL LEARNING</text>
+</svg>

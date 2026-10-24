@@ -1,0 +1,27 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg width=800 height=500 viewBox=0 0 800 500>
+  <defs>
+    <linearGradient id=bg x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#0a0f1d/>
+      <stop offset=100% style=stop-color:#101a2e/>
+    </linearGradient>
+    <linearGradient id=blueG x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#3b82f6/>
+      <stop offset=100% style=stop-color:#06b6d4/>
+    </linearGradient>
+  </defs>
+  <rect width=800 height=500 fill=url(#bg)/>
+  <!-- Window Frame -->
+  <rect x=230 y=80 width=340 height=220 rx=10 fill=#152238 stroke=#3b82f6 stroke-width=2 opacity=0.9/>
+  <rect x=230 y=80 width=340 height=30 rx=10 fill=#1e293b/>
+  <circle cx=250 cy=95 r=4 fill=#ef4444/>
+  <circle cx=265 cy=95 r=4 fill=#f59e0b/>
+  <circle cx=280 cy=95 r=4 fill=#10b981/>
+  <!-- ERP Bar Chart inside window -->
+  <rect x=280 y=210 width=25 height=60 rx=4 fill=url(#blueG)/>
+  <rect x=325 y=160 width=25 height=110 rx=4 fill=url(#blueG)/>
+  <rect x=370 y=130 width=25 height=140 rx=4 fill=url(#blueG)/>
+  <rect x=415 y=180 width=25 height=90 rx=4 fill=url(#blueG)/>
+  <rect x=460 y=140 width=25 height=130 rx=4 fill=url(#blueG)/>
+  <text x=400 y=380 font-family=system-ui, sans-serif font-size=28 font-weight=bold fill=#ffffff text-anchor=middle letter-spacing=2>ENTERPRISE ERP</text>
+  <text x=400 y=415 font-family=system-ui, sans-serif font-size=14 fill=#3b82f6 text-anchor=middle letter-spacing=3>WINDOWS DESKTOP SUITE &amp; POS</text>
+</svg>

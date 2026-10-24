@@ -1,0 +1,25 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg width=800 height=500 viewBox=0 0 800 500>
+  <defs>
+    <linearGradient id=bg x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#0f0914/>
+      <stop offset=100% style=stop-color:#1c0b1f/>
+    </linearGradient>
+    <linearGradient id=purpleG x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#a855f7/>
+      <stop offset=100% style=stop-color:#ec4899/>
+    </linearGradient>
+  </defs>
+  <rect width=800 height=500 fill=url(#bg)/>
+  <!-- Glowing Play Disc -->
+  <circle cx=400 cy=190 r=80 fill=none stroke=url(#purpleG) stroke-width=4/>
+  <polygon points=380,150 440,190 380,230 fill=url(#purpleG)/>
+  <!-- Sound / Stream waves -->
+  <g opacity=0.3 stroke=#a855f7 stroke-width=2 fill=none>
+    <path d=M220,190 A180,180 0 0,1 270,100/>
+    <path d=M250,190 A150,150 0 0,1 290,120/>
+    <path d=M580,190 A180,180 0 0,0 530,100/>
+    <path d=M550,190 A150,150 0 0,0 510,120/>
+  </g>
+  <text x=400 y=380 font-family=system-ui, sans-serif font-size=28 font-weight=bold fill=#ffffff text-anchor=middle letter-spacing=2>HV PLAYER</text>
+  <text x=400 y=415 font-family=system-ui, sans-serif font-size=14 fill=#a855f7 text-anchor=middle letter-spacing=3>FTP DIRECT STREAMING MEDIA PLAYER</text>
+</svg>

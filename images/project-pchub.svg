@@ -1,0 +1,27 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg width=800 height=500 viewBox=0 0 800 500>
+  <defs>
+    <linearGradient id=bg x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#0d0a14/>
+      <stop offset=100% style=stop-color:#160e22/>
+    </linearGradient>
+    <linearGradient id=rgb x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#ec4899/>
+      <stop offset=50% style=stop-color:#8b5cf6/>
+      <stop offset=100% style=stop-color:#06b6d4/>
+    </linearGradient>
+  </defs>
+  <rect width=800 height=500 fill=url(#bg)/>
+  <!-- PC Case outline -->
+  <rect x=330 y=90 width=140 height=230 rx=12 fill=none stroke=url(#rgb) stroke-width=4/>
+  <circle cx=400 cy=160 r=35 fill=none stroke=#06b6d4 stroke-width=3 stroke-dasharray=10 5 opacity=0.8/>
+  <circle cx=400 cy=245 r=35 fill=none stroke=#ec4899 stroke-width=3 stroke-dasharray=10 5 opacity=0.8/>
+  <!-- Circuit paths -->
+  <g opacity=0.2 stroke=#8b5cf6 stroke-width=2 fill=none>
+    <path d=M200,150 L300,150 L330,170/>
+    <path d=M600,150 L500,150 L470,170/>
+    <path d=M200,260 L300,260 L330,240/>
+    <path d=M600,260 L500,260 L470,240/>
+  </g>
+  <text x=400 y=390 font-family=system-ui, sans-serif font-size=28 font-weight=bold fill=#ffffff text-anchor=middle letter-spacing=2>PC HUB BANGLADESH</text>
+  <text x=400 y=425 font-family=system-ui, sans-serif font-size=14 fill=#ec4899 text-anchor=middle letter-spacing=3>CUSTOM PC BUILDER &amp; E-COMMERCE</text>
+</svg>
