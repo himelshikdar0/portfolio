@@ -8,7 +8,7 @@ import { useCountUp } from '../hooks/useCountUp';
 const stats = [
   { icon: GraduationCap, label: 'Education', value: 3, suffix: '+', displayText: 'Diploma in CE', color: 'primary' },
   { icon: Briefcase, label: 'Experience', value: 2, suffix: '+', displayText: '2+ Years', color: 'cyan' },
-  { icon: Code2, label: 'Projects', value: 5, suffix: '+', displayText: '5+ Done', color: 'blue' },
+  { icon: Code2, label: 'Projects', value: 19, suffix: '+', displayText: '19+ Done', color: 'blue' },
   { icon: MapPin, label: 'Location', value: 0, suffix: '', displayText: 'Bangladesh', color: 'primary' },
 ];
 

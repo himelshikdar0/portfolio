@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Mail, Phone, MapPin, Send, Loader2, CheckCircle2, AlertCircle } from 'lucide-react';
 import ScrollReveal from '../components/ScrollReveal';
 import SectionTitle from '../components/SectionTitle';
 import { personalInfo } from '../data';
@@ -37,20 +37,52 @@ export default function Contact() {
     message: '',
   });
 
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [statusMessage, setStatusMessage] = useState('');
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
+    if (status !== 'idle') setStatus('idle');
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:${personalInfo.email}?subject=${encodeURIComponent(
-      formData.subject
-    )}&body=${encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
-    )}`;
-    window.location.href = mailtoLink;
+    setStatus('loading');
+    setStatusMessage('');
+
+    try {
+      const response = await fetch('https://formspree.io/f/xeaaoyky', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setStatusMessage('Thank you! Your message has been sent successfully. I will get back to you soon.');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        const data = await response.json().catch(() => null);
+        setStatus('error');
+        setStatusMessage(
+          data?.errors?.map((err: { message: string }) => err.message).join(', ') ||
+            'Something went wrong. Please try again or email directly.'
+        );
+      }
+    } catch {
+      setStatus('error');
+      setStatusMessage('Network error. Please check your internet connection and try again.');
+    }
   };
 
   const contactInfo = [
@@ -177,15 +209,50 @@ export default function Contact() {
                   placeholder="Tell me about your project..."
                 />
               </div>
+              <AnimatePresence>
+                {status === 'success' && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="p-4 rounded-xl bg-primary/15 border border-primary/40 flex items-center gap-3 text-primary text-sm shadow-lg shadow-primary/10"
+                  >
+                    <CheckCircle2 size={20} className="flex-shrink-0 text-primary" />
+                    <span className="font-medium">{statusMessage}</span>
+                  </motion.div>
+                )}
+                {status === 'error' && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="p-4 rounded-xl bg-red-500/15 border border-red-500/40 flex items-center gap-3 text-red-300 text-sm shadow-lg shadow-red-500/10"
+                  >
+                    <AlertCircle size={20} className="flex-shrink-0 text-red-400" />
+                    <span>{statusMessage}</span>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
               <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+                whileHover={status !== 'loading' ? { scale: 1.02 } : {}}
+                whileTap={status !== 'loading' ? { scale: 0.98 } : {}}
                 type="submit"
-                className="w-full py-3.5 bg-gradient-to-r from-primary to-cyan text-dark font-semibold rounded-xl flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-primary/25 transition-shadow"
+                disabled={status === 'loading'}
+                className="w-full py-3.5 bg-gradient-to-r from-primary to-cyan text-dark font-semibold rounded-xl flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-primary/25 transition-all disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
                 data-cursor-hover
               >
-                <Send size={18} />
-                Send Message
+                {status === 'loading' ? (
+                  <>
+                    <Loader2 size={18} className="animate-spin" />
+                    <span>Sending Message...</span>
+                  </>
+                ) : (
+                  <>
+                    <Send size={18} />
+                    <span>Send Message</span>
+                  </>
+                )}
               </motion.button>
             </form>
           </ScrollReveal>

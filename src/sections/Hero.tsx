@@ -66,10 +66,12 @@ export default function Hero() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <motion.a
                   href={`${import.meta.env.BASE_URL}cv.pdf`}
-                  download
+                  download="Himel_Shikdar_CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-3.5 bg-gradient-to-r from-primary to-cyan text-dark font-semibold rounded-xl flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-primary/25 transition-shadow"
+                  className="px-8 py-3.5 bg-gradient-to-r from-primary to-cyan text-dark font-semibold rounded-xl flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-primary/25 transition-shadow cursor-pointer"
                   data-cursor-hover
                 >
                   <Download size={18} />

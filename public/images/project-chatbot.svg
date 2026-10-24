@@ -1,0 +1,25 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg width=800 height=500 viewBox=0 0 800 500>
+  <defs>
+    <linearGradient id=bg x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#09121d/>
+      <stop offset=100% style=stop-color:#0d1d30/>
+    </linearGradient>
+    <linearGradient id=aiGrad x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#06b6d4/>
+      <stop offset=100% style=stop-color:#3b82f6/>
+    </linearGradient>
+  </defs>
+  <rect width=800 height=500 fill=url(#bg)/>
+  <!-- Speech Bubbles -->
+  <rect x=280 y=110 width=180 height=75 rx=16 fill=url(#aiGrad)/>
+  <rect x=340 y=200 width=180 height=75 rx=16 fill=#1e293b stroke=#06b6d4 stroke-width=2/>
+  <!-- AI sparkle dots -->
+  <circle cx=330 cy=148 r=5 fill=#ffffff/>
+  <circle cx=360 cy=148 r=5 fill=#ffffff/>
+  <circle cx=390 cy=148 r=5 fill=#ffffff/>
+  <circle cx=390 cy=238 r=5 fill=#06b6d4/>
+  <circle cx=420 cy=238 r=5 fill=#06b6d4/>
+  <circle cx=450 cy=238 r=5 fill=#06b6d4/>
+  <text x=400 y=380 font-family=system-ui, sans-serif font-size=28 font-weight=bold fill=#ffffff text-anchor=middle letter-spacing=2>CHAT BOT AI ASSISTANT</text>
+  <text x=400 y=415 font-family=system-ui, sans-serif font-size=14 fill=#06b6d4 text-anchor=middle letter-spacing=3>GEMINI WHATSAPP &amp; MESSENGER BOT</text>
+</svg>

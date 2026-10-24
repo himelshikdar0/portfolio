@@ -1,0 +1,28 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg width=800 height=500 viewBox=0 0 800 500>
+  <defs>
+    <linearGradient id=bg x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#0a0c16/>
+      <stop offset=100% style=stop-color:#11162b/>
+    </linearGradient>
+    <linearGradient id=chartGrad x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#10b981/>
+      <stop offset=100% style=stop-color:#06b6d4/>
+    </linearGradient>
+  </defs>
+  <rect width=800 height=500 fill=url(#bg)/>
+  <!-- Candlestick Bars -->
+  <line x1=280 y1=120 x2=280 y2=280 stroke=#10b981 stroke-width=2/>
+  <rect x=270 y=160 width=20 height=70 fill=#10b981 rx=3/>
+  <line x1=330 y1=140 x2=330 y2=300 stroke=#ef4444 stroke-width=2/>
+  <rect x=320 y=180 width=20 height=60 fill=#ef4444 rx=3/>
+  <line x1=380 y1=90 x2=380 y2=270 stroke=#10b981 stroke-width=2/>
+  <rect x=370 y=130 width=20 height=90 fill=#10b981 rx=3/>
+  <line x1=430 y1=110 x2=430 y2=290 stroke=#10b981 stroke-width=2/>
+  <rect x=420 y=150 width=20 height=80 fill=#10b981 rx=3/>
+  <line x1=480 y1=70 x2=480 y2=250 stroke=#10b981 stroke-width=2/>
+  <rect x=470 y=100 width=20 height=110 fill=#10b981 rx=3/>
+  <!-- Line Trend -->
+  <path d=M250,220 L330,190 L380,140 L430,160 L520,80 fill=none stroke=#06b6d4 stroke-width=3/>
+  <text x=400 y=380 font-family=system-ui, sans-serif font-size=28 font-weight=bold fill=#ffffff text-anchor=middle letter-spacing=2>CYPHERX EXCHANGE</text>
+  <text x=400 y=415 font-family=system-ui, sans-serif font-size=14 fill=#10b981 text-anchor=middle letter-spacing=3>CRYPTO TRADING &amp; SWAP PLATFORM</text>
+</svg>

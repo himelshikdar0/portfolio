@@ -1,0 +1,21 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg width=800 height=500 viewBox=0 0 800 500>
+  <defs>
+    <linearGradient id=bg x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#160914/>
+      <stop offset=100% style=stop-color:#210d1c/>
+    </linearGradient>
+    <linearGradient id=insta x1=0% y1=0% x2=100% y2=100%>
+      <stop offset=0% style=stop-color:#f59e0b/>
+      <stop offset=50% style=stop-color:#ec4899/>
+      <stop offset=100% style=stop-color:#8b5cf6/>
+    </linearGradient>
+  </defs>
+  <rect width=800 height=500 fill=url(#bg)/>
+  <!-- Camera Rounded Rect -->
+  <rect x=330 y=100 width=140 height=140 rx=35 fill=none stroke=url(#insta) stroke-width=6/>
+  <!-- Download arrow inside lens -->
+  <circle cx=400 cy=170 r=35 fill=none stroke=#ffffff stroke-width=3 opacity=0.6/>
+  <path d=M400,145 L400,190 M385,175 L400,190 L415,175 stroke=url(#insta) stroke-width=5 stroke-linecap=round stroke-linejoin=round/>
+  <text x=400 y=380 font-family=system-ui, sans-serif font-size=28 font-weight=bold fill=#ffffff text-anchor=middle letter-spacing=2>INSTAGRAM DOWNLOADER PRO</text>
+  <text x=400 y=415 font-family=system-ui, sans-serif font-size=14 fill=#ec4899 text-anchor=middle letter-spacing=3>CHROME EXTENSION (MANIFEST V3)</text>
+</svg>

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { personalInfo } from '../data';
 
 const FacebookIcon = () => (
   <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -25,15 +26,15 @@ const LinkedinIcon = () => (
 );
 
 const socials = [
-  { icon: FacebookIcon, href: 'https://www.facebook.com/himel007sr', label: 'Facebook', color: 'hover:text-blue-500 hover:border-blue-500/30' },
-  { icon: InstagramIcon, href: 'https://www.instagram.com/himelsrs/', label: 'Instagram', color: 'hover:text-pink-500 hover:border-pink-500/30' },
-  { icon: GithubIcon, href: 'https://github.com/himelshikdar', label: 'GitHub', color: 'hover:text-white hover:border-white/30' },
-  { icon: LinkedinIcon, href: 'https://linkedin.com/in/himelshikdar', label: 'LinkedIn', color: 'hover:text-blue-400 hover:border-blue-400/30' },
+  { icon: FacebookIcon, href: personalInfo.facebook, label: 'Facebook', color: 'hover:text-blue-500 hover:border-blue-500/30' },
+  { icon: InstagramIcon, href: personalInfo.instagram, label: 'Instagram', color: 'hover:text-pink-500 hover:border-pink-500/30' },
+  { icon: GithubIcon, href: personalInfo.github, label: 'GitHub', color: 'hover:text-white hover:border-white/30' },
+  { icon: LinkedinIcon, href: personalInfo.linkedin, label: 'LinkedIn', color: 'hover:text-blue-400 hover:border-blue-400/30' },
 ];
 
 export default function FloatingSocialBar() {
   return (
-    <div className="fixed left-6 bottom-8 z-40 hidden lg:flex flex-col items-center gap-3">
+    <div className="fixed left-6 bottom-8 z-40 hidden 2xl:flex flex-col items-center gap-3">
       {socials.map((s, i) => (
         <motion.a
           key={i}
